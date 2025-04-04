@@ -11,17 +11,9 @@ body {
     background-color: white;
     margin: 0px;
     padding: 0px;
-    font-size:12px;
+    font-size: 2rem;
 }
 
-
-.container-content{
-    position: relative;
-    left: 25vw;
-    padding: 36px;
-    margin: 24px;
-    width: 65vw;
-}
 
 
 #heading {
@@ -47,11 +39,14 @@ body {
 
 }
 
-/*confused about this*/
+.description > div {
+    font-size: 2rem;
+}
+
 .description>ul>li>a {
     font-family: "DM Sans", sans-serif;
     color: #EF8354;
-    background-color: #2D3142;
+    background-color: #2d3142;
     font-weight: 800;
     text-decoration: none;
     -webkit-text-stroke: 0px;
@@ -64,55 +59,53 @@ a:hover {
 }
 
 nav {
-    background-color: red;
+    background-color: #EF8354;
     font-family: "DM Sans", sans-serif;
-    font-size: 24px;
-    line-height: 150%;
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 256px;
+    width: 25vw;
     height: 100vh;
+    font-size:3rem;
 }
 
 
- 
-    nav > ul {
-        margin-left: 0px;
-        margin-top: 121 px;
-        padding: 0 px;
-        text-align: center;
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 100;
-        line-height: 150%;
-        letter-spacing: 9px;
-        list-style-type: none;
-        color: var(--darkblue);
-        text-decoration: none;
-    }
+
+nav>ul {
+    background-color: #EF8354;
+    margin-left: -30px;
+    margin-top: 121 px;
+    padding: 0 px;
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    letter-spacing: 9px;
+    list-style-type: none;
+    color: var(--darkblue);
+    text-decoration: none;
+}
 
 
 
 nav>#menu {
-    margin-top: 60 px;
+    margin-top: 70 px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #BFC0C0;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-
 }
 
 nav>#menu>span {
     position: relative;
-    top: 50% left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
-/*PUTTING CODE IN HERE DOESN'T APPLY VISUALLY*/
-nav>ul,
-ul>a,
-a:visited {}
 
 nav>ul>li>a,
 a:visited {
@@ -122,8 +115,16 @@ a:visited {
 
 nav>ul>li {
     margin: 0px;
-    font-size:3rem;
+    font-size: 3rem;
 }
+
+
+.navStyle>ul>li>a,a:visited {
+    font-size: 2rem;
+    color: #2D3142;
+    text-decoration: none;
+}
+
 
 h1 {
     color: #4F5D75;
@@ -169,6 +170,14 @@ strong {
     font-weight: 800;
 }
 
+bold {
+    font-family: "DM Sans", sans-serif;
+    color: #EF8354;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+
 
 i {
     font-family: "DM Sans", sans-serif;
@@ -181,4 +190,95 @@ a,
 a:visited {
     color: #2D3142;
     text-decoration: none;
+}
+
+.square-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the squares */
+    margin-top: 20px; /* Add some space between the heading and the squares */
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    border: 1px solid #ccc; /* Optional border for better visibility */
+}
+
+
+.testimonial {
+    font-family: "DM Sans", sans-serif;
+    color: #2D3142;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 36px;
+
+}
+
+.testimonial > div {
+    font-size: 2rem;
+}
+
+.testimonial>ul>li>a {
+    font-family: "DM Sans", sans-serif;
+    color: #EF8354;
+    background-color: #2d3142;
+    font-weight: 800;
+    text-decoration: none;
+    -webkit-text-stroke: 0px;
+    transition: color 2s;
+}
+
+
+button {
+    background-color: #EF8354; 
+    color: white; 
+    border: none; 
+    padding: 15px 30px; 
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px; 
+    margin-left: 420px;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: #2D3142; /* Darker green on hover */
+}
+
+@media only screen and (max-width:600px) {
+
+     * {
+        font-size:10px;
+     }
+
+     nav {
+        position: fixed;
+        top: 0px;
+        left:0px;
+        height: 15vh;
+        width: 100vw;
+     }
+
+     
+}
+
+.container-content {
+    position: relative;
+    left: 25vw;
+    padding: 36px;
+    margin: 24px;
+    width: 65vw;
+    font-size:2rem;
+}
+
+.description > div::first-letter {
+    font-family: "DM Serif Display", serif;
+    font-size: 60px;
+    font-style: italic;
+
+
+    initial-letter: 2;
 }
